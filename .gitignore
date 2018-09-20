@@ -3,7 +3,8 @@ node_modules
 bower_components
 
 # Untrack source maps and minified files
-css/*
+css/*.min.css
+css/*.min.css.map
 js/*.min.js
 js/*.min.js.map
 
