@@ -1,0 +1,11 @@
+# Folders to ignore
+node_modules
+bower_components
+
+# Untrack source maps and minified files
+css/*
+js/*.min.js
+js/*.min.js.map
+
+# OS or Editor folders
+Thumbs.db

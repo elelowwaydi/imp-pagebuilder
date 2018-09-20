@@ -1,0 +1,61 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+@mixin transition($sec) {
+    -webkit-transition: all $sec cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    transition: all $sec cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+@mixin rotate($deg) {
+    -webkit-transform: rotate($deg);
+    -moz-transform: rotate($deg);
+    -o-transform: rotate($deg);
+    transform: rotate($deg);
+}
+
+@mixin transform-origin($x, $y) {
+    -webkit-transform-origin: $x $y;
+    -moz-transform-origin: $x $y;
+    -ms-transform-origin: $x $y;
+    -o-transform-origin: $x $y;
+    transform-origin: $x $y;
+}
+
+@mixin scale($x, $y) {
+    -webkit-transform: scale($x, $y);
+    -moz-transform:  scale($x, $y);
+    -o-transform:  scale($x, $y);
+    -ms-transform:  scale($x, $y);
+    transform:  scale($x, $y);
+}
+
+@mixin translate($x, $y) {
+    -webkit-transform: translate($x, $y);
+    -moz-transform: translate($x, $y);
+    -o-transform: translate($x, $y);
+    -ms-transform: translate($x, $y);
+    transform: translate($x, $y);
+}
+
+@mixin background-opacity($color, $opacity) {
+    background: $color;
+    background: rgba($color, $opacity);
+}
+
+@mixin object-fit($val) {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: $val;
+    object-fit: $val;
+    font-family: 'object-fit:'+$val;
+}
+
+@mixin link-unstyled {
+    a {
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: none;
+        }
+    }
+}
