@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
-#imp-builder-library-panel-toggle {
+#imp-builder_library-panel-toggle {
     padding: 2px 12px;
     font-size: 26px;
     i {
@@ -18,7 +18,7 @@
     }
 }
 
-#imp-builder-tools-toggle {
+#imp-builder_tools-toggle {
     i {
         margin-left: 4px;
         vertical-align: middle;
@@ -26,7 +26,7 @@
     }
 }
 
-.imp-builder-library-panel {
+.imp-builder_library-panel {
     position: fixed;
     right: 15px;
     top: 80px;
@@ -47,7 +47,7 @@
         visibility: visible;
         opacity: 1;
     }
-    .imp-builder-panel-arrow {
+    .imp-builder_panel-arrow {
         position: absolute;
         top: -5px;
         left: 0;
@@ -58,7 +58,7 @@
         background-color: $primary-color;
         @include rotate(45deg);
     }
-    .imp-builder-panel-header {
+    .imp-builder_panel-header {
         position: relative;
         z-index: 2;
         border-top: 3px solid $primary-color;
@@ -89,7 +89,7 @@
             }
         }
     }
-    .imp-builder-panel-body {
+    .imp-builder_panel-body {
        padding: 15px 15px 20px;
     }
     .elements-list {
@@ -202,7 +202,7 @@
 }
 
 // tools menu
-.imp-builder-tools-menu-panel {
+.imp-builder_tools-menu-panel {
     position: fixed;
     right: 15px;
     top: 80px;
@@ -224,7 +224,7 @@
         visibility: visible;
         opacity: 1;
     }
-    .imp-builder-tools-arrow {
+    .imp-builder_tools-arrow {
         position: absolute;
         top: -8px;
         right: 35px;
@@ -233,13 +233,13 @@
         background-color: $primary-color;
         @include rotate(45deg);
     }
-    .imp-builder-tools-body {
+    .imp-builder_tools-body {
         position: relative;
         padding: 15px 10px;
         background-color: #fff;
         border-radius: 3px;
     }
-    .imp-builder-tools-menu {
+    .imp-builder_tools-menu {
         list-style: none;
         padding: 0;
         margin: 0;
@@ -267,17 +267,18 @@
     }
 }
 
-.imp-builder-page-content {
+.imp-builder_page-content {
 
 }
 
-.imp-builder-stage {
-
+.imp-builder_stage {
+    position: relative;
+    overflow: hidden;
 }
 
-.imp-builder-empty {
+.imp-builder_empty {
     padding: 15px;
-    .imp-builder-content {
+    .imp-builder_content {
         border: 2px dashed #969696;
         border-radius: 8px;
         color: #909090;
@@ -293,40 +294,34 @@
     }
 }
 
-.imp-builder-row {
+.imp-builder_row {
     position: relative;
-    &:hover {
-        .imp-builder-row-overlay {
-            opacity: 1;
-            visibility: visible;
-        }
-        .imp-builder-settings-lightbox {
-            opacity: 1;
-            visibility: visible;
-        }
-    }
 }
 
-.imp-builder-row-overlay {
+.imp-builder_row-placeholder {
+    border: 3px dashed $primary-color;
+    margin: 4px 2px;
+    height: 50px;
+}
+
+.imp-builder_widget-settings-overlay {
     position: absolute;
     top: 2px;
     left: 2px;
     right: 2px;
     bottom: 2px;
-    border: 2px solid #00A0D2;
+    border: 2px solid $primary-color;
     border-radius: 4px;
     z-index: 9;
-    opacity: 0;
-    visibility: hidden;
     pointer-events: none;
     @include transition(.35s);
-    .imp-builder-row-settings {
+    .imp-builder_row-settings {
         position: absolute;
         list-style: none;
         padding-left: 0;
         padding-right: 4px;
         margin: 0;
-        background-color: #00A0D2;
+        background-color: $primary-color;
         border-bottom-right-radius: 4px;
         pointer-events: all;
         &:after {
@@ -347,7 +342,7 @@
     }
 }
 
-.imp-builder-settings-lightbox {
+.imp-builder_settings-lightbox {
     position: absolute;
     left: 8px;
     top: 40px;
@@ -357,9 +352,7 @@
     box-shadow: 0 8px 40px 4px rgba(0,0,0,.3);
     border-radius: 3px;
     color: #808080;
-    // opacity: 0;
-    // visibility: hidden;
-    .imp-builder-lightbox-header {
+    .imp-builder_lightbox-header {
         position: relative;
         z-index: 2;
         border-top: 3px solid $primary-color;
@@ -416,7 +409,7 @@
             }
         }
     }
-    .imp-builder-lightbox-body {
+    .imp-builder_lightbox-body {
         overflow-y: scroll;
         height: 355px;
         background-color: #F5F7F9;
@@ -448,7 +441,7 @@
             color: #333;
             font-weight: 600;
         }
-        .imp-builder-widget-settings-section {
+        .imp-builder_widget-settings-section {
             position: relative;
             padding: 40px 15px 15px;
             border-top: 2px solid #E6EAED;
@@ -500,7 +493,7 @@
             }
         }
     }
-    .imp-builder-lightbox-footer {
+    .imp-builder_lightbox-footer {
         background-color: #F5F7F9;
         padding: 6px 5px;
         .btn {

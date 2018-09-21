@@ -573,10 +573,10 @@ body {
     background-color: #9bba39;
     color: #fff; }
 
-.imp-builder-header-wrapper {
+.imp-builder_header-wrapper {
   height: 70px; }
 
-.imp-builder-header {
+.imp-builder_header {
   position: fixed;
   left: 0;
   top: 0;
@@ -586,13 +586,13 @@ body {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
   background-color: #2b2a2a;
   overflow: hidden; }
-  .imp-builder-header .navbar-brand {
+  .imp-builder_header .navbar-brand {
     padding: 0 15px; }
-    .imp-builder-header .navbar-brand img {
+    .imp-builder_header .navbar-brand img {
       height: 40px; }
-  .imp-builder-header .imp-builder-actions {
+  .imp-builder_header .imp-builder_actions {
     float: right; }
-  .imp-builder-header .imp-builder-publish-actions {
+  .imp-builder_header .imp-builder_publish-actions {
     position: absolute;
     right: 15px;
     background-color: #2b2a2a;
@@ -603,24 +603,24 @@ body {
     transform: translate(calc(100% + 15px), 0);
     -webkit-transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
-    .imp-builder-header .imp-builder-publish-actions.active {
+    .imp-builder_header .imp-builder_publish-actions.active {
       -webkit-transform: translate(0, 0);
       -moz-transform: translate(0, 0);
       -o-transform: translate(0, 0);
       -ms-transform: translate(0, 0);
       transform: translate(0, 0); }
-    .imp-builder-header .imp-builder-publish-actions .btn {
+    .imp-builder_header .imp-builder_publish-actions .btn {
       margin-right: 0; }
-      .imp-builder-header .imp-builder-publish-actions .btn i {
+      .imp-builder_header .imp-builder_publish-actions .btn i {
         margin-right: 5px;
         vertical-align: middle; }
-    .imp-builder-header .imp-builder-publish-actions .btn-cancel {
+    .imp-builder_header .imp-builder_publish-actions .btn-cancel {
       margin-left: 5px;
       background-color: #E4E7EA;
       color: #676F7A; }
-      .imp-builder-header .imp-builder-publish-actions .btn-cancel:hover {
+      .imp-builder_header .imp-builder_publish-actions .btn-cancel:hover {
         background-color: #ddd; }
-  .imp-builder-header .imp-builder-button {
+  .imp-builder_header .imp-builder_button {
     display: inline-block;
     margin-right: 8px;
     padding: 2px 15px;
@@ -630,15 +630,15 @@ body {
     font-weight: 600;
     background-color: #9bba39;
     color: #fff; }
-    .imp-builder-header .imp-builder-button:hover {
+    .imp-builder_header .imp-builder_button:hover {
       background-color: #8da934; }
-    .imp-builder-header .imp-builder-button:last-child {
+    .imp-builder_header .imp-builder_button:last-child {
       margin-right: 0; }
 
-#imp-builder-library-panel-toggle {
+#imp-builder_library-panel-toggle {
   padding: 2px 12px;
   font-size: 26px; }
-  #imp-builder-library-panel-toggle i {
+  #imp-builder_library-panel-toggle i {
     -webkit-transition: all 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transition: all 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     -webkit-transform: rotate(0deg);
@@ -648,18 +648,18 @@ body {
     -webkit-transform-origin: center center;
     transform-origin: center center;
     width: 26px; }
-  #imp-builder-library-panel-toggle.active i {
+  #imp-builder_library-panel-toggle.active i {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg); }
 
-#imp-builder-tools-toggle i {
+#imp-builder_tools-toggle i {
   margin-left: 4px;
   vertical-align: middle;
   font-size: 18px; }
 
-.imp-builder-library-panel {
+.imp-builder_library-panel {
   position: fixed;
   right: 15px;
   top: 80px;
@@ -680,7 +680,7 @@ body {
   transition: all 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   visibility: hidden;
   opacity: 0; }
-  .imp-builder-library-panel.active {
+  .imp-builder_library-panel.active {
     -webkit-transform: scale(1, 1);
     -moz-transform: scale(1, 1);
     -o-transform: scale(1, 1);
@@ -688,7 +688,7 @@ body {
     transform: scale(1, 1);
     visibility: visible;
     opacity: 1; }
-  .imp-builder-library-panel .imp-builder-panel-arrow {
+  .imp-builder_library-panel .imp-builder_panel-arrow {
     position: absolute;
     top: -5px;
     left: 0;
@@ -701,7 +701,7 @@ body {
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg); }
-  .imp-builder-library-panel .imp-builder-panel-header {
+  .imp-builder_library-panel .imp-builder_panel-header {
     position: relative;
     z-index: 2;
     border-top: 3px solid #9bba39;
@@ -709,31 +709,31 @@ body {
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
     background-color: #fff; }
-    .imp-builder-library-panel .imp-builder-panel-header .builder-category-tabs {
+    .imp-builder_library-panel .imp-builder_panel-header .builder-category-tabs {
       margin-left: 10px;
       border: 0; }
-      .imp-builder-library-panel .imp-builder-panel-header .builder-category-tabs > li {
+      .imp-builder_library-panel .imp-builder_panel-header .builder-category-tabs > li {
         margin: 0; }
-        .imp-builder-library-panel .imp-builder-panel-header .builder-category-tabs > li > a {
+        .imp-builder_library-panel .imp-builder_panel-header .builder-category-tabs > li > a {
           padding: 10px 15px;
           border: 0;
           border-radius: 0;
           font-weight: bold; }
-          .imp-builder-library-panel .imp-builder-panel-header .builder-category-tabs > li > a:hover {
+          .imp-builder_library-panel .imp-builder_panel-header .builder-category-tabs > li > a:hover {
             background-color: transparent; }
-      .imp-builder-library-panel .imp-builder-panel-header .builder-category-tabs > li.active > a,
-      .imp-builder-library-panel .imp-builder-panel-header .builder-category-tabs > li.active > a:focus,
-      .imp-builder-library-panel .imp-builder-panel-header .builder-category-tabs > li.active > a:hover {
+      .imp-builder_library-panel .imp-builder_panel-header .builder-category-tabs > li.active > a,
+      .imp-builder_library-panel .imp-builder_panel-header .builder-category-tabs > li.active > a:focus,
+      .imp-builder_library-panel .imp-builder_panel-header .builder-category-tabs > li.active > a:hover {
         color: #9bba39;
         border: 0; }
-  .imp-builder-library-panel .imp-builder-panel-body {
+  .imp-builder_library-panel .imp-builder_panel-body {
     padding: 15px 15px 20px; }
-  .imp-builder-library-panel .elements-list {
+  .imp-builder_library-panel .elements-list {
     list-style: none;
     padding-left: 0;
     margin: 0px auto auto;
     font-weight: bold; }
-    .imp-builder-library-panel .elements-list > li {
+    .imp-builder_library-panel .elements-list > li {
       float: left;
       width: 50%;
       padding: 10px;
@@ -742,15 +742,15 @@ body {
       cursor: pointer;
       -webkit-transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
-      .imp-builder-library-panel .elements-list > li:hover {
+      .imp-builder_library-panel .elements-list > li:hover {
         -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
         color: #000; }
-      .imp-builder-library-panel .elements-list > li i {
+      .imp-builder_library-panel .elements-list > li i {
         margin-right: 5px;
         font-size: 22px;
         vertical-align: middle; }
-  .imp-builder-library-panel .rows-list .row-item {
+  .imp-builder_library-panel .rows-list .row-item {
     float: left;
     width: 50%;
     padding: 10px;
@@ -758,21 +758,21 @@ body {
     cursor: pointer;
     -webkit-transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
-    .imp-builder-library-panel .rows-list .row-item:hover {
+    .imp-builder_library-panel .rows-list .row-item:hover {
       -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
       color: #000; }
-    .imp-builder-library-panel .rows-list .row-item .row-visual {
+    .imp-builder_library-panel .rows-list .row-item .row-visual {
       margin-left: -2px;
       margin-right: -2px;
       margin-bottom: 4px; }
-      .imp-builder-library-panel .rows-list .row-item .row-visual:after {
+      .imp-builder_library-panel .rows-list .row-item .row-visual:after {
         display: table;
         clear: both;
         content: ""; }
-    .imp-builder-library-panel .rows-list .row-item .row-title {
+    .imp-builder_library-panel .rows-list .row-item .row-title {
       font-weight: 600; }
-    .imp-builder-library-panel .rows-list .row-item span {
+    .imp-builder_library-panel .rows-list .row-item span {
       display: block;
       width: calc(100% - 4px);
       float: left;
@@ -780,15 +780,15 @@ body {
       height: 30px;
       background-color: #464a4c;
       border-radius: 2px; }
-  .imp-builder-library-panel .rows-list .col-2 span {
+  .imp-builder_library-panel .rows-list .col-2 span {
     width: calc(50% - 4px); }
-  .imp-builder-library-panel .rows-list .col-3 span {
+  .imp-builder_library-panel .rows-list .col-3 span {
     width: calc(33.333% - 4px); }
-  .imp-builder-library-panel .rows-list .col-4 span {
+  .imp-builder_library-panel .rows-list .col-4 span {
     width: calc(25% - 4px); }
-  .imp-builder-library-panel .rows-list .col-6 span {
+  .imp-builder_library-panel .rows-list .col-6 span {
     width: calc(16.66% - 4px); }
-  .imp-builder-library-panel .section-templates-list .section-template-item {
+  .imp-builder_library-panel .section-templates-list .section-template-item {
     float: left;
     width: 50%;
     padding: 10px;
@@ -796,23 +796,23 @@ body {
     cursor: pointer;
     -webkit-transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
-    .imp-builder-library-panel .section-templates-list .section-template-item:hover {
+    .imp-builder_library-panel .section-templates-list .section-template-item:hover {
       -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
       color: #000; }
-    .imp-builder-library-panel .section-templates-list .section-template-item .img-container {
+    .imp-builder_library-panel .section-templates-list .section-template-item .img-container {
       height: 100px;
       margin-bottom: 8px; }
-      .imp-builder-library-panel .section-templates-list .section-template-item .img-container img {
+      .imp-builder_library-panel .section-templates-list .section-template-item .img-container img {
         width: 100%;
         height: 100%;
         -o-object-fit: cover;
         object-fit: cover;
         font-family: "object-fit:cover"; }
-    .imp-builder-library-panel .section-templates-list .section-template-item .template-title {
+    .imp-builder_library-panel .section-templates-list .section-template-item .template-title {
       font-weight: 600; }
 
-.imp-builder-tools-menu-panel {
+.imp-builder_tools-menu-panel {
   position: fixed;
   right: 15px;
   top: 80px;
@@ -834,7 +834,7 @@ body {
   visibility: hidden;
   opacity: 0;
   border-top: 3px solid #9bba39; }
-  .imp-builder-tools-menu-panel.active {
+  .imp-builder_tools-menu-panel.active {
     -webkit-transform: scale(1, 1);
     -moz-transform: scale(1, 1);
     -o-transform: scale(1, 1);
@@ -842,7 +842,7 @@ body {
     transform: scale(1, 1);
     visibility: visible;
     opacity: 1; }
-  .imp-builder-tools-menu-panel .imp-builder-tools-arrow {
+  .imp-builder_tools-menu-panel .imp-builder_tools-arrow {
     position: absolute;
     top: -8px;
     right: 35px;
@@ -853,34 +853,38 @@ body {
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg); }
-  .imp-builder-tools-menu-panel .imp-builder-tools-body {
+  .imp-builder_tools-menu-panel .imp-builder_tools-body {
     position: relative;
     padding: 15px 10px;
     background-color: #fff;
     border-radius: 3px; }
-  .imp-builder-tools-menu-panel .imp-builder-tools-menu {
+  .imp-builder_tools-menu-panel .imp-builder_tools-menu {
     list-style: none;
     padding: 0;
     margin: 0; }
-    .imp-builder-tools-menu-panel .imp-builder-tools-menu > li > a {
+    .imp-builder_tools-menu-panel .imp-builder_tools-menu > li > a {
       display: block;
       padding: 8px 10px;
       border-radius: 4px;
       font-weight: 600; }
-      .imp-builder-tools-menu-panel .imp-builder-tools-menu > li > a:hover, .imp-builder-tools-menu-panel .imp-builder-tools-menu > li > a:focus, .imp-builder-tools-menu-panel .imp-builder-tools-menu > li > a:active {
+      .imp-builder_tools-menu-panel .imp-builder_tools-menu > li > a:hover, .imp-builder_tools-menu-panel .imp-builder_tools-menu > li > a:focus, .imp-builder_tools-menu-panel .imp-builder_tools-menu > li > a:active {
         text-decoration: none;
         background-color: #e6eaed;
         color: #000; }
-      .imp-builder-tools-menu-panel .imp-builder-tools-menu > li > a i {
+      .imp-builder_tools-menu-panel .imp-builder_tools-menu > li > a i {
         margin-right: 8px;
         vertical-align: middle; }
-    .imp-builder-tools-menu-panel .imp-builder-tools-menu .list-seperator {
+    .imp-builder_tools-menu-panel .imp-builder_tools-menu .list-seperator {
       margin: 8px 0;
       border-top: 1px solid #ddd; }
 
-.imp-builder-empty {
+.imp-builder_stage {
+  position: relative;
+  overflow: hidden; }
+
+.imp-builder_empty {
   padding: 15px; }
-  .imp-builder-empty .imp-builder-content {
+  .imp-builder_empty .imp-builder_content {
     border: 2px dashed #969696;
     border-radius: 8px;
     color: #909090;
@@ -900,56 +904,53 @@ body {
     -webkit-align-items: center;
     -moz-align-items: center;
     align-items: center; }
-    .imp-builder-empty .imp-builder-content span {
+    .imp-builder_empty .imp-builder_content span {
       font-weight: bold;
       text-transform: uppercase;
       font-size: 18px; }
 
-.imp-builder-row {
+.imp-builder_row {
   position: relative; }
-  .imp-builder-row:hover .imp-builder-row-overlay {
-    opacity: 1;
-    visibility: visible; }
-  .imp-builder-row:hover .imp-builder-settings-lightbox {
-    opacity: 1;
-    visibility: visible; }
 
-.imp-builder-row-overlay {
+.imp-builder_row-placeholder {
+  border: 3px dashed #9bba39;
+  margin: 4px 2px;
+  height: 50px; }
+
+.imp-builder_widget-settings-overlay {
   position: absolute;
   top: 2px;
   left: 2px;
   right: 2px;
   bottom: 2px;
-  border: 2px solid #00A0D2;
+  border: 2px solid #9bba39;
   border-radius: 4px;
   z-index: 9;
-  opacity: 0;
-  visibility: hidden;
   pointer-events: none;
   -webkit-transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
-  .imp-builder-row-overlay .imp-builder-row-settings {
+  .imp-builder_widget-settings-overlay .imp-builder_row-settings {
     position: absolute;
     list-style: none;
     padding-left: 0;
     padding-right: 4px;
     margin: 0;
-    background-color: #00A0D2;
+    background-color: #9bba39;
     border-bottom-right-radius: 4px;
     pointer-events: all; }
-    .imp-builder-row-overlay .imp-builder-row-settings:after {
+    .imp-builder_widget-settings-overlay .imp-builder_row-settings:after {
       display: table;
       clear: both;
       content: ""; }
-    .imp-builder-row-overlay .imp-builder-row-settings > li {
+    .imp-builder_widget-settings-overlay .imp-builder_row-settings > li {
       float: left; }
-      .imp-builder-row-overlay .imp-builder-row-settings > li > a {
+      .imp-builder_widget-settings-overlay .imp-builder_row-settings > li > a {
         display: block;
         padding: 4px 12px;
         color: #fff;
         font-size: 18px; }
 
-.imp-builder-settings-lightbox {
+.imp-builder_settings-lightbox {
   position: absolute;
   left: 8px;
   top: 40px;
@@ -959,7 +960,7 @@ body {
   box-shadow: 0 8px 40px 4px rgba(0, 0, 0, 0.3);
   border-radius: 3px;
   color: #808080; }
-  .imp-builder-settings-lightbox .imp-builder-lightbox-header {
+  .imp-builder_settings-lightbox .imp-builder_lightbox-header {
     position: relative;
     z-index: 2;
     border-top: 3px solid #9bba39;
@@ -967,24 +968,24 @@ body {
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
     background-color: #fff; }
-    .imp-builder-settings-lightbox .imp-builder-lightbox-header .lightbox-title {
+    .imp-builder_settings-lightbox .imp-builder_lightbox-header .lightbox-title {
       padding: 12px 15px;
       font-size: 18px;
       font-weight: 600;
       color: #333; }
-    .imp-builder-settings-lightbox .imp-builder-lightbox-header .settings-category-tabs {
+    .imp-builder_settings-lightbox .imp-builder_lightbox-header .settings-category-tabs {
       border: 0;
       margin: 0 4px 5px; }
-      .imp-builder-settings-lightbox .imp-builder-lightbox-header .settings-category-tabs > li {
+      .imp-builder_settings-lightbox .imp-builder_lightbox-header .settings-category-tabs > li {
         margin: 0;
         width: 50%; }
-        .imp-builder-settings-lightbox .imp-builder-lightbox-header .settings-category-tabs > li:first-child > a {
+        .imp-builder_settings-lightbox .imp-builder_lightbox-header .settings-category-tabs > li:first-child > a {
           border-top-left-radius: 3px;
           border-bottom-left-radius: 3px; }
-        .imp-builder-settings-lightbox .imp-builder-lightbox-header .settings-category-tabs > li:last-child > a {
+        .imp-builder_settings-lightbox .imp-builder_lightbox-header .settings-category-tabs > li:last-child > a {
           border-top-right-radius: 3px;
           border-bottom-right-radius: 3px; }
-        .imp-builder-settings-lightbox .imp-builder-lightbox-header .settings-category-tabs > li > a {
+        .imp-builder_settings-lightbox .imp-builder_lightbox-header .settings-category-tabs > li > a {
           padding: 6px 15px;
           border: 2px solid #e6eaed;
           border-radius: 0;
@@ -992,17 +993,17 @@ body {
           text-align: center;
           font-size: 14px;
           margin: 0; }
-          .imp-builder-settings-lightbox .imp-builder-lightbox-header .settings-category-tabs > li > a:hover {
+          .imp-builder_settings-lightbox .imp-builder_lightbox-header .settings-category-tabs > li > a:hover {
             background-color: transparent; }
-        .imp-builder-settings-lightbox .imp-builder-lightbox-header .settings-category-tabs > li.active > a {
+        .imp-builder_settings-lightbox .imp-builder_lightbox-header .settings-category-tabs > li.active > a {
           background-color: #e6eaed; }
-      .imp-builder-settings-lightbox .imp-builder-lightbox-header .settings-category-tabs > li.active > a,
-      .imp-builder-settings-lightbox .imp-builder-lightbox-header .settings-category-tabs > li.active > a:focus,
-      .imp-builder-settings-lightbox .imp-builder-lightbox-header .settings-category-tabs > li.active > a:hover {
+      .imp-builder_settings-lightbox .imp-builder_lightbox-header .settings-category-tabs > li.active > a,
+      .imp-builder_settings-lightbox .imp-builder_lightbox-header .settings-category-tabs > li.active > a:focus,
+      .imp-builder_settings-lightbox .imp-builder_lightbox-header .settings-category-tabs > li.active > a:hover {
         color: #9bba39;
         border: 2px solid #e6eaed;
         margin: 0; }
-  .imp-builder-settings-lightbox .imp-builder-lightbox-body {
+  .imp-builder_settings-lightbox .imp-builder_lightbox-body {
     overflow-y: scroll;
     height: 355px;
     background-color: #F5F7F9;
@@ -1012,25 +1013,25 @@ body {
     /* Track */
     /* Handle */
     /* Handle on hover */ }
-    .imp-builder-settings-lightbox .imp-builder-lightbox-body::-webkit-scrollbar {
+    .imp-builder_settings-lightbox .imp-builder_lightbox-body::-webkit-scrollbar {
       width: 8px; }
-    .imp-builder-settings-lightbox .imp-builder-lightbox-body::-webkit-scrollbar-track {
+    .imp-builder_settings-lightbox .imp-builder_lightbox-body::-webkit-scrollbar-track {
       background: transparent; }
-    .imp-builder-settings-lightbox .imp-builder-lightbox-body::-webkit-scrollbar-thumb {
+    .imp-builder_settings-lightbox .imp-builder_lightbox-body::-webkit-scrollbar-thumb {
       background: #c9ced3;
       border-radius: 4px; }
-    .imp-builder-settings-lightbox .imp-builder-lightbox-body::-webkit-scrollbar-thumb:hover {
+    .imp-builder_settings-lightbox .imp-builder_lightbox-body::-webkit-scrollbar-thumb:hover {
       background: #c9ced3; }
-    .imp-builder-settings-lightbox .imp-builder-lightbox-body label {
+    .imp-builder_settings-lightbox .imp-builder_lightbox-body label {
       margin-left: 4px;
       font-size: 13px;
       color: #333;
       font-weight: 600; }
-    .imp-builder-settings-lightbox .imp-builder-lightbox-body .imp-builder-widget-settings-section {
+    .imp-builder_settings-lightbox .imp-builder_lightbox-body .imp-builder_widget-settings-section {
       position: relative;
       padding: 40px 15px 15px;
       border-top: 2px solid #E6EAED; }
-      .imp-builder-settings-lightbox .imp-builder-lightbox-body .imp-builder-widget-settings-section h3 {
+      .imp-builder_settings-lightbox .imp-builder_lightbox-body .imp-builder_widget-settings-section h3 {
         position: absolute;
         padding: 2px 15px;
         top: 0;
@@ -1041,43 +1042,43 @@ body {
         font-size: 13px;
         color: #333;
         font-weight: 600; }
-    .imp-builder-settings-lightbox .imp-builder-lightbox-body .form-group .form-control {
+    .imp-builder_settings-lightbox .imp-builder_lightbox-body .form-group .form-control {
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
       border: none;
       font-size: 13px; }
-    .imp-builder-settings-lightbox .imp-builder-lightbox-body .form-group .form-group-inner {
+    .imp-builder_settings-lightbox .imp-builder_lightbox-body .form-group .form-group-inner {
       display: inline-block;
       text-align: center; }
-    .imp-builder-settings-lightbox .imp-builder-lightbox-body .margin-input-group label,
-    .imp-builder-settings-lightbox .imp-builder-lightbox-body .padding-input-group label {
+    .imp-builder_settings-lightbox .imp-builder_lightbox-body .margin-input-group label,
+    .imp-builder_settings-lightbox .imp-builder_lightbox-body .padding-input-group label {
       display: block; }
-    .imp-builder-settings-lightbox .imp-builder-lightbox-body .margin-input-group .form-group-inner,
-    .imp-builder-settings-lightbox .imp-builder-lightbox-body .padding-input-group .form-group-inner {
+    .imp-builder_settings-lightbox .imp-builder_lightbox-body .margin-input-group .form-group-inner,
+    .imp-builder_settings-lightbox .imp-builder_lightbox-body .padding-input-group .form-group-inner {
       display: inline-block;
       margin-right: 4px; }
-      .imp-builder-settings-lightbox .imp-builder-lightbox-body .margin-input-group .form-group-inner .form-control,
-      .imp-builder-settings-lightbox .imp-builder-lightbox-body .padding-input-group .form-group-inner .form-control {
+      .imp-builder_settings-lightbox .imp-builder_lightbox-body .margin-input-group .form-group-inner .form-control,
+      .imp-builder_settings-lightbox .imp-builder_lightbox-body .padding-input-group .form-group-inner .form-control {
         height: 36px;
         padding: 6px 12px;
         margin-bottom: 4px; }
-      .imp-builder-settings-lightbox .imp-builder-lightbox-body .margin-input-group .form-group-inner label,
-      .imp-builder-settings-lightbox .imp-builder-lightbox-body .padding-input-group .form-group-inner label {
+      .imp-builder_settings-lightbox .imp-builder_lightbox-body .margin-input-group .form-group-inner label,
+      .imp-builder_settings-lightbox .imp-builder_lightbox-body .padding-input-group .form-group-inner label {
         font-size: 12px; }
-    .imp-builder-settings-lightbox .imp-builder-lightbox-body .margin-input-group ._label,
-    .imp-builder-settings-lightbox .imp-builder-lightbox-body .padding-input-group ._label {
+    .imp-builder_settings-lightbox .imp-builder_lightbox-body .margin-input-group ._label,
+    .imp-builder_settings-lightbox .imp-builder_lightbox-body .padding-input-group ._label {
       vertical-align: top;
       padding: 7px 2px;
       color: #000; }
-  .imp-builder-settings-lightbox .imp-builder-lightbox-footer {
+  .imp-builder_settings-lightbox .imp-builder_lightbox-footer {
     background-color: #F5F7F9;
     padding: 6px 5px; }
-    .imp-builder-settings-lightbox .imp-builder-lightbox-footer .btn {
+    .imp-builder_settings-lightbox .imp-builder_lightbox-footer .btn {
       margin-right: 2px;
       border-radius: 2px;
       border: 0;
       width: calc(33.333% - 4px);
       font-weight: 600; }
-      .imp-builder-settings-lightbox .imp-builder-lightbox-footer .btn:last-child {
+      .imp-builder_settings-lightbox .imp-builder_lightbox-footer .btn:last-child {
         margin-right: 0; }
 
 /*# sourceMappingURL=app.css.map */

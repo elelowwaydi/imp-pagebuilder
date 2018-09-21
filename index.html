@@ -16,8 +16,8 @@
 
 <body>
     <!-- header -->
-    <div class="imp-builder-header-wrapper">
-        <div class="imp-builder-header navbar">
+    <div class="imp-builder_header-wrapper">
+        <div class="imp-builder_header navbar">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -29,17 +29,17 @@
                     </button>
                 </div>
 
-                <div class="imp-builder-actions">
-                    <div id="imp-builder-library-panel-toggle" class="imp-builder-button btn" data-toggle="tooltip" data-placement="bottom" title="Add Widget"><i class="fal fa-plus"></i></div>
-                    <div class="imp-builder-publish-toggle imp-builder-button btn" data-toggle="tooltip" data-placement="bottom" title="Done Editing">Done</div>
-                    <div id="imp-builder-tools-toggle" class="imp-builder-button btn" data-toggle="tooltip" data-placement="bottom" title="Page builder tools">Tools <i class="fal fa-sliders-h"></i></div>
+                <div class="imp-builder_actions">
+                    <div id="imp-builder_library-panel-toggle" class="imp-builder_button btn" data-toggle="tooltip" data-placement="bottom" title="Add Widget"><i class="fal fa-plus"></i></div>
+                    <div class="imp-builder_publish-toggle imp-builder_button btn" data-toggle="tooltip" data-placement="bottom" title="Done Editing">Done</div>
+                    <div id="imp-builder_tools-toggle" class="imp-builder_button btn" data-toggle="tooltip" data-placement="bottom" title="Page builder tools">Tools <i class="fal fa-sliders-h"></i></div>
                 </div>
 
-                <div class="imp-builder-publish-actions">
-                    <div class="imp-builder-button btn"><i class="fal fa-upload"></i>Publish</div>
-                    <div class="imp-builder-button btn"><i class="fal fa-eye"></i>Preview</div>
-                    <div class="imp-builder-button btn"><i class="fal fa-ban"></i>Discard</div>
-                    <div class="imp-builder-publish-toggle imp-builder-button btn btn-cancel">Cancel</div>
+                <div class="imp-builder_publish-actions">
+                    <div class="imp-builder_button btn"><i class="fal fa-upload"></i>Publish</div>
+                    <div class="imp-builder_button btn"><i class="fal fa-eye"></i>Preview</div>
+                    <div class="imp-builder_button btn"><i class="fal fa-ban"></i>Discard</div>
+                    <div class="imp-builder_publish-toggle imp-builder_button btn btn-cancel">Cancel</div>
                 </div>
             </div>
         </div>
@@ -47,9 +47,9 @@
     <!-- // end header -->
 
     <!-- builder library panel -->
-    <div class="imp-builder-library-panel">
-        <div class="imp-builder-panel-arrow"></div>
-        <div class="imp-builder-panel-header">
+    <div class="imp-builder_library-panel">
+        <div class="imp-builder_panel-arrow"></div>
+        <div class="imp-builder_panel-header">
             <ul class="builder-category-tabs nav nav-tabs">
                 <li class="active"><a data-toggle="tab" href="#elements-tab">Elements</a></li>
                 <li><a data-toggle="tab" href="#rows-tab">Rows</a></li>
@@ -57,7 +57,7 @@
                 <li><a data-toggle="tab" href="#saved-tab">Saved</a></li>
             </ul>
         </div>
-        <div class="imp-builder-panel-body">
+        <div class="imp-builder_panel-body">
             <div class="tab-content">
                 <div id="elements-tab" class="tab-pane fade in active">
                     <ul class="elements-list clearfix">
@@ -174,11 +174,11 @@
     <!-- // end builder library panel -->
 
     <!-- tools dropdown -->
-    <div class="imp-builder-tools-menu-panel">
-        <div class="imp-builder-tools-arrow"></div>
-        <div class="imp-builder-tools-header"></div>
-        <div class="imp-builder-tools-body">
-            <ul class="imp-builder-tools-menu">
+    <div class="imp-builder_tools-menu-panel">
+        <div class="imp-builder_tools-arrow"></div>
+        <div class="imp-builder_tools-header"></div>
+        <div class="imp-builder_tools-body">
+            <ul class="imp-builder_tools-menu">
                 <li><a href="#"><i class="fal fa-save"></i> Save Template</a></li>
                 <li><a href="#"><i class="fal fa-clone"></i>Duplicate Layout</a></li>
                 <li><a href="#"><i class="fal fa-eye"></i>Preview Layout</a></li>
@@ -191,282 +191,15 @@
     <!-- // end tools dropdown -->
 
     <!-- page-body -->
-    <div class="imp-builder-page-content">
-        <div class="imp-builder-stage">
-            <!-- <div class="imp-builder-empty">
-                <div class="imp-builder-content">
+    <div class="imp-builder_page-content">
+        <div class="imp-builder_stage">
+            <!-- <div class="imp-builder_empty">
+                <div class="imp-builder_content">
                     <span>Drop a row layout or template to get started!</span>
                 </div>
             </div> -->
 
-            <div class="imp-builder-row">
-                <div class="imp-builder-row-overlay">
-                    <ul class="imp-builder-row-settings">
-                        <li><a href="javascript:void(0);" class=""><i class="fal fa-arrows"></i></a></li>
-                        <li><a href="javascript:void(0);" class=""><i class="fal fa-clone"></i></a></li>
-                        <li><a href="javascript:void(0);" class=""><i class="fal fa-wrench"></i></a></li>
-                        <li><a href="javascript:void(0);" class="delete-widget"><i class="fal fa-trash-alt"></i></a></li>
-                    </ul>
-                </div>
-
-                <div class="imp-builder-settings-lightbox">
-                    <div class="imp-builder-lightbox-header">
-                        <div class="lightbox-title">Row Settings</div>
-                        <ul class="settings-category-tabs nav nav-tabs">
-                            <li class="active"><a data-toggle="tab" href="#style-tab">Style</a></li>
-                            <li><a data-toggle="tab" href="#advanced-tab">Advanced</a></li>
-                        </ul>
-                    </div>
-                    <div class="imp-builder-lightbox-body">
-                        <div class="tab-content">
-                            <div id="style-tab" class="tab-pane fade in active">
-                                <div class="imp-builder-widget-settings-section">
-                                    <h3>Layout</h3>
-                                    <div class="form-group">
-                                        <label for="">Width</label>
-                                        <select class="form-control">
-                                            <option>Full Width</option>
-                                            <option>Fixed</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="">Content Width</label>
-                                        <select class="form-control">
-                                            <option>Full Width</option>
-                                            <option>Fixed</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="">Content Alignment</label>
-                                        <select class="form-control">
-                                            <option>Left</option>
-                                            <option>Center</option>
-                                            <option>Right</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="imp-builder-widget-settings-section">
-                                    <h3>Background</h3>
-                                    <div class="form-group">
-                                        <label for="">Type</label>
-                                        <select class="form-control">
-                                            <option>None</option>
-                                            <option>Color</option>
-                                            <option>Photo</option>
-                                            <option>Video</option>
-                                            <option>Parallax</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="">Background Color</label>
-                                        <input type="colorpicker" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="imp-builder-widget-settings-section">
-                                    <h3>Background Photo</h3>
-                                    <div class="form-group">
-                                        <label for="">Photo</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="">Position</label>
-                                        <select class="form-control">
-                                            <option>Left Top</option>
-                                            <option>Left Center</option>
-                                            <option>Left Bottom</option>
-                                            <option>Right Top</option>
-                                            <option>Right Center</option>
-                                            <option>Right Bottom</option>
-                                            <option>Center Top</option>
-                                            <option>Center</option>
-                                            <option>Center Bottom</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="imp-builder-widget-settings-section">
-                                    <h3>Background Video</h3>
-                                    <div class="form-group">
-                                        <label for="">Video</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="imp-builder-widget-settings-section">
-                                    <h3>Background Overlay</h3>
-                                    <div class="form-group">
-                                        <label for="">Overlay</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="advanced-tab" class="tab-pane fade">
-                                <div class="imp-builder-widget-settings-section">
-                                    <h3>Spacing</h3>
-                                    <div class="form-group margin-input-group">
-                                        <label for="">Margins</label>
-                                        <div class="form-group-inner">
-                                            <select class="form-control">
-                                                <option>0</option>
-                                                <option>10</option>
-                                                <option>20</option>
-                                                <option>30</option>
-                                                <option>40</option>
-                                                <option>50</option>
-                                                <option>60</option>
-                                                <option>70</option>
-                                                <option>80</option>
-                                                <option>90</option>
-                                                <option>100</option>
-                                            </select>
-                                            <label for="">Top</label>
-                                        </div>
-                                        <div class="form-group-inner">
-                                            <select class="form-control">
-                                                <option>0</option>
-                                                <option>10</option>
-                                                <option>20</option>
-                                                <option>30</option>
-                                                <option>40</option>
-                                                <option>50</option>
-                                                <option>60</option>
-                                                <option>70</option>
-                                                <option>80</option>
-                                                <option>90</option>
-                                                <option>100</option>
-                                            </select>
-                                            <label for="">Right</label>
-                                        </div>
-                                        <div class="form-group-inner">
-                                            <select class="form-control">
-                                                <option>0</option>
-                                                <option>10</option>
-                                                <option>20</option>
-                                                <option>30</option>
-                                                <option>40</option>
-                                                <option>50</option>
-                                                <option>60</option>
-                                                <option>70</option>
-                                                <option>80</option>
-                                                <option>90</option>
-                                                <option>100</option>
-                                            </select>
-                                            <label for="">Bottom</label>
-                                        </div>
-                                        <div class="form-group-inner">
-                                            <select class="form-control">
-                                                <option>0</option>
-                                                <option>10</option>
-                                                <option>20</option>
-                                                <option>30</option>
-                                                <option>40</option>
-                                                <option>50</option>
-                                                <option>60</option>
-                                                <option>70</option>
-                                                <option>80</option>
-                                                <option>90</option>
-                                                <option>100</option>
-                                            </select>
-                                            <label for="">Left</label>
-                                        </div>
-                                        <div class="form-group-inner _label">
-                                            px
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group padding-input-group">
-                                        <label for="">Padding</label>
-                                        <div class="form-group-inner">
-                                            <select class="form-control">
-                                                <option>0</option>
-                                                <option>10</option>
-                                                <option>20</option>
-                                                <option>30</option>
-                                                <option>40</option>
-                                                <option>50</option>
-                                                <option>60</option>
-                                                <option>70</option>
-                                                <option>80</option>
-                                                <option>90</option>
-                                                <option>100</option>
-                                            </select>
-                                            <label for="">Top</label>
-                                        </div>
-                                        <div class="form-group-inner">
-                                            <select class="form-control">
-                                                <option>0</option>
-                                                <option>10</option>
-                                                <option>20</option>
-                                                <option>30</option>
-                                                <option>40</option>
-                                                <option>50</option>
-                                                <option>60</option>
-                                                <option>70</option>
-                                                <option>80</option>
-                                                <option>90</option>
-                                                <option>100</option>
-                                            </select>
-                                            <label for="">Right</label>
-                                        </div>
-                                        <div class="form-group-inner">
-                                            <select class="form-control">
-                                                <option>0</option>
-                                                <option>10</option>
-                                                <option>20</option>
-                                                <option>30</option>
-                                                <option>40</option>
-                                                <option>50</option>
-                                                <option>60</option>
-                                                <option>70</option>
-                                                <option>80</option>
-                                                <option>90</option>
-                                                <option>100</option>
-                                            </select>
-                                            <label for="">Bottom</label>
-                                        </div>
-                                        <div class="form-group-inner">
-                                            <select class="form-control">
-                                                <option>0</option>
-                                                <option>10</option>
-                                                <option>20</option>
-                                                <option>30</option>
-                                                <option>40</option>
-                                                <option>50</option>
-                                                <option>60</option>
-                                                <option>70</option>
-                                                <option>80</option>
-                                                <option>90</option>
-                                                <option>100</option>
-                                            </select>
-                                            <label for="">Left</label>
-                                        </div>
-                                        <div class="form-group-inner _label">
-                                            px
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="imp-builder-widget-settings-section">
-                                    <h3>Visibility</h3>
-                                    <div class="form-group">
-                                        <label for="">Display</label>
-                                        <select class="form-control">
-                                            <option>Hidden</option>
-                                            <option>Always</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="imp-builder-lightbox-footer">
-                        <button class="imp-builder-button btn">Save</button>
-                        <button class="imp-builder-button btn">Save As...</button>
-                        <button class="imp-builder-button btn">Cancel</button>
-                    </div>
-                </div>
-
+            <div class="imp-builder_row">
                 <div class="customer-service-section bg-gray row-section">
                     <div class="section-title line-through">
                         <div class="inner">
@@ -502,16 +235,7 @@
                 </div>
             </div>
 
-            <div class="imp-builder-row">
-                <div class="imp-builder-row-overlay">
-                    <ul class="imp-builder-row-settings">
-                        <li><a href="javascript:void(0);" class=""><i class="fal fa-arrows"></i></a></li>
-                        <li><a href="javascript:void(0);" class=""><i class="fal fa-clone"></i></a></li>
-                        <li><a href="javascript:void(0);" class=""><i class="fal fa-wrench"></i></a></li>
-                        <li><a href="javascript:void(0);" class="delete-widget"><i class="fal fa-trash-alt"></i></a></li>
-                    </ul>
-                </div>
-
+            <div class="imp-builder_row">
                 <div class="call-to-action">
                     <div class="section-title line-through">
                         <div class="inner content-editable">
@@ -531,18 +255,103 @@
                 </div>
             </div>
 
+            <div class="imp-builder_row">
+                <div class="customer-service-section bg-gray row-section">
+                    <div class="section-title line-through">
+                        <div class="inner">
+                            <div class="h2 content-editable">
+                                OUR CUSTOMER SERVICES TEAM IS HERE TO HELP
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="content-editable">
+                                    <p>Monday to Friday, 9:00 am - 12:00 noon and 1:00 pm - 5:30 pm</p>
+                                    <ul class="list-unstyled tb-list_caret">
+                                        <li>telephone : <a href="tel:+3280678372">+32 80 67 83 72</a></li>
+                                        <li>email : <a href="mailto:contact@tuningbox.com">contact@tuningbox.com</a></li>
+                                        <li><a href="#">online chat</a></li>
+                                        <li><a href="/en/customer-services.htm">contact form</a></li>
+                                    </ul>
+                                    <p><i><a class="highlight-link" href="/en/faqs.htm">See our FAQs </a></i> <br> <i><a class="highlight-link" href="/en/customer-services.htm">See our Help section</a></i></p>
+                                    <p class="text-left"> </p>
+                                    <p class="text-left">Registered office:<br>
+                                        <strong>TuningBox Sprl<br></strong>Ruthier 1 | 4950 Faymonville | Belgium</p>
+                                    <p> </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6"> <br><br>
+                                <div class="img-container clearfix">
+                                    <img src="./img/csr.png" class="img-responsive pull-right" alt=""> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="imp-builder_row">
+                <div class="gallery-grid clearfix">
+                    <div class="gallery-col clearfix">
+                        <div class="grid-item item-big">
+                            <div class="img-container"> <img src="./img/59980cdf48966.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="grid-item item-medium">
+                            <div class="img-container"> <img src="./img/59980d7ceba5c.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="grid-item item-small">
+                            <div class="img-container"> <img src="./img/59bf86c202ec0.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="grid-item item-wide">
+                            <div class="img-container"> <img src="./img/59980e488e999.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-col clearfix">
+                        <div class="grid-item item-tall">
+                            <div class="img-container"> <img src="./img/59980b9e39cbb.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="grid-item item-medium">
+                            <div class="img-container"> <img src="./img/59980bd997df1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="grid-item item-small">
+                            <div class="img-container"> <img src="./img/59bf86e868ff6.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="grid-item item-small">
+                            <div class="img-container"> <img src="./img/59980d6b31956.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="grid-item item-wide">
+                            <div class="img-container"> <img src="./img/59980ec976261.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
+
+        <div id="tae"></div>
     </div>
     <!-- // end page-body -->
 
 
     <!-- scripts -->
     <script type="text/javascript" src="./vendor/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./vendor/jquery-ui/jquery-ui.min.js"></script>
     <script type="text/javascript" src="./vendor/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./vendor/tooltipster/js/tooltipster.bundle.min.js"></script>
     <script type="text/javascript" src="./vendor/tinymce/js/tinymce/tinymce.min.js"></script>
-    <script src="./js/app.min.js"></script>
+    <script type="text/javascript" src="./vendor/handlebars/handlebars-v4.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

@@ -1,10 +1,10 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
-.imp-builder-header-wrapper {
+.imp-builder_header-wrapper {
     height: 70px;
 }
-.imp-builder-header {
+.imp-builder_header {
     position: fixed;
     left: 0;
     top: 0;
@@ -20,10 +20,10 @@
             height: 40px;
         }
     }
-    .imp-builder-actions {
+    .imp-builder_actions {
         float: right;
     }
-    .imp-builder-publish-actions {
+    .imp-builder_publish-actions {
         position: absolute;
         right: 15px;
         background-color: #2b2a2a;
@@ -48,7 +48,7 @@
             }
         }
     }    
-    .imp-builder-button {
+    .imp-builder_button {
         display: inline-block;
         margin-right: 8px;
         padding: 2px 15px;
