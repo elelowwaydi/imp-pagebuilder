@@ -12,7 +12,7 @@ var _tooltips = function () {
     });
 }
 
-// builder actions
+// page builder main actions
 var _builderPageActions = function () {
     var $builderLibraryToggle = $('#imp-builder_library-panel-toggle');
     var $builderLibrary = $('.imp-builder_library-panel');
@@ -46,20 +46,68 @@ var _builderPageActions = function () {
 // builder row settings
 // row level widget settings (move, clone, row-settings, delete)
 var _builderRowSettings = function() {
+    var copyHelper;
+    $(".imp-builder_rows-widget-list").sortable({
+    connectWith: ".imp-builder_stage",
+    placeholder: "imp-builder_row-placeholder",
+    helper: function(event, el) {
+        copyHelper = el.clone().insertAfter(el);
+        return el.clone();
+    },
+    beforeStop: function(event, ui) {
+        $(this).sortable(
+        "option",
+        "selfDrop",
+        $(ui.placeholder).parent()[0] == this
+        );
+    },
+    stop: function(event, ui) {
+        copyHelper && copyHelper.remove();
+        var $sortable = $(this);
+        if ($sortable.sortable("option", "selfDrop")) {
+        $sortable.sortable("cancel");
+        return;
+        }
+    }
+    });
+    $(".imp-builder_stage").sortable({
+    items: ".imp-builder_row-widget",
+    placeholder: "imp-builder_row-placeholder",
+    receive: function(e, ui) {
+        copyHelper = null;
+    }
+    });
 
-    // row sortable
-    $('.imp-builder_stage').sortable({
-        items: '.imp-builder_row',
-        connectWidth: '.imp-builder_stage',
-        handle: '.imp-builder_row-block-move',
-        placeholder: 'imp-builder_row-placeholder ui-corner-all',
-        tolerance: "pointer",
-    })
+
+    // $(".rows-list .imp-builder_row").draggable({
+    //     helper: function() {
+    //       return $(this).clone().removeClass("row-item").appendTo(".imp-builder_stage");
+    //     },
+    //     cursor: "move",
+    //     containment: "document"
+    //   });
+
+    // $('.imp-builder_stage').droppable({
+    //     accept: '.row-item',
+    //     drop: function(event, ui) { 
+    //         if (!ui.draggable.hasClass("dropped"))
+    //           $(this).append($(ui.draggable).clone().removeClass("ui-draggable").removeClass("dropped"));
+    //       }
+    // }).sortable({
+    //     items: '.imp-builder_row',
+    //     connectWidth: '.imp-builder_stage',
+    //     handle: '.imp-builder_row-block-move',
+    //     placeholder: 'imp-builder_row-placeholder ui-corner-all',
+    //     forcePlaceholderSize: true,
+    //     helper: function (evt, ui) {
+    //         return $(ui).clone().appendTo(".imp-builder_stage").show();
+    //       }
+    // })
 
     // row cloning
     $(document).on('click', '.imp-builder_row-block-clone', function(e) {
         e.preventDefault();
-        var thisRow = $(this).closest('.imp-builder_row');
+        var thisRow = $(this).closest('.imp-builder_row-widget');
         thisRow.clone().insertAfter(thisRow);
         mainApp.$root.animate({
             scrollTop: thisRow.next().offset().top - 150
@@ -71,7 +119,7 @@ var _builderRowSettings = function() {
         e.preventDefault();
         var remove = confirm("Do you really want to delete this row?");
         if(remove == true) {
-            $(this).closest('.imp-builder_row').remove();
+            $(this).closest('.imp-builder_row-widget').remove();
         }
     })
 }
@@ -91,12 +139,12 @@ var _builderWidgetSettings = function() {
     });  
 
     // append template on active widget
-    $(document).on('mouseenter', '.imp-builder_row', function() {
+    $(document).on('mouseenter', '.imp-builder_stage>.imp-builder_row-widget', function() {
        $(this).append(widgetOverlayTemplate);
     })
 
     // delete template on widget mouseleave
-    $(document).on('mouseleave', '.imp-builder_row', function() {
+    $(document).on('mouseleave', '.imp-builder_stage>.imp-builder_row-widget', function() {
         $(this).find('.imp-builder_widget-settings-overlay').remove();
     })
 
@@ -115,7 +163,7 @@ var _builderWidgetSettings = function() {
     $(document).on('click', '.imp-builder_row-block-settings', function(e) {
         e.preventDefault();
         if(widgetSettingsFlag) {
-            $(this).closest('.imp-builder_row').append(widgetSettingsTemplate);
+            $(this).closest('.imp-builder_row-widget').append(widgetSettingsTemplate);
             widgetSettingsFlag = false;
         }
     })
@@ -126,6 +174,11 @@ var _builderWidgetSettings = function() {
         $(this).closest('.imp-builder_settings-lightbox').remove();
         widgetSettingsFlag = true;
     })
+}
+
+// builder widget actions
+var _builderWidgetActions = function() {
+
 }
 
 // tinymce
@@ -163,6 +216,7 @@ $(document).ready(function () {
     _builderPageActions();
     _builderRowSettings();
     _builderWidgetSettings();
+    _builderWidgetActions();
     _tinymce();
 
 });

@@ -47,49 +47,72 @@
     <!-- // end header -->
 
     <!-- builder library panel -->
-    <div class="imp-builder_library-panel">
+    <div class="imp-builder_library-panel active">
         <div class="imp-builder_panel-arrow"></div>
         <div class="imp-builder_panel-header">
             <ul class="builder-category-tabs nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#elements-tab">Elements</a></li>
-                <li><a data-toggle="tab" href="#rows-tab">Rows</a></li>
-                <li><a data-toggle="tab" href="#templates-tab">Templates</a></li>
-                <li><a data-toggle="tab" href="#saved-tab">Saved</a></li>
+                <li class="active"><a data-toggle="tab" href="#imp-builder_elements-tab">Elements</a></li>
+                <li><a data-toggle="tab" href="#imp-builder_rows-tab">Rows</a></li>
+                <li><a data-toggle="tab" href="#imp-builder_templates-tab">Templates</a></li>
+                <li><a data-toggle="tab" href="#imp-builder_saved-tab">Saved</a></li>
             </ul>
         </div>
         <div class="imp-builder_panel-body">
+
             <div class="tab-content">
-                <div id="elements-tab" class="tab-pane fade in active">
-                    <ul class="elements-list clearfix">
-                        <li><i class="far fa-rectangle-landscape"></i> Button</li>
-                        <li><i class="fal fa-minus"></i> Seperator</li>
-                        <li><i class="fal fa-image"></i> Photo</li>
-                        <li><i class="fal fa-images"></i> Gallery</li>
-                        <li><i class="fal fa-play-circle"></i> Video</li>
-                        <li><i class="fal fa-images"></i> Content Slider</li>
-                        <li><i class="fab fa-font-awesome-flag"></i> Icon</li>
-                        <li><i class="fab fa-font-awesome-flag"></i> Icon Group</li>
-                        <li><i class="fal fa-map-marked-alt"></i> Map</li>
-                        <li><i class="fas fa-quote-left"></i> Testimonial</li>
-                        <li><i class="fal fa-table"></i> Table</li>
-                    </ul>
+                <div id="imp-builder_elements-tab" class="tab-pane fade in active">
+                    <div class="elements-list">
+                        <div class="element-list-item">
+                            <i class="far fa-rectangle-landscape"></i> Button
+                        </div>
+                        <div class="element-list-item">
+                            <i class="fal fa-minus"></i> Seperator
+                        </div>
+                        <div class="element-list-item">
+                            <i class="fal fa-image"></i> Photo
+                        </div>
+                        <div class="element-list-item">
+                            <i class="fal fa-images"></i> Gallery
+                        </div>
+                        <div class="element-list-item">
+                            <i class="fal fa-play-circle"></i> Video
+                        </div>
+                        <div class="element-list-item">
+                            <i class="fal fa-images"></i> Content Slider
+                        </div>
+                        <div class="element-list-item">
+                            <i class="fab fa-font-awesome-flag"></i> Icon
+                        </div>
+                        <div class="element-list-item">
+                            <i class="fab fa-font-awesome-flag"></i> Icon Group
+                        </div>
+                        <div class="element-list-item">
+                            <i class="fal fa-map-marked-alt"></i> Map
+                        </div>
+                        <div class="element-list-item">
+                            <i class="fas fa-quote-left"></i> Testimonial
+                        </div>
+                        <div class="element-list-item">
+                            <i class="fal fa-table"></i> Table
+                        </div>
+                    </div>
                 </div>
-                <div id="rows-tab" class="tab-pane fade">
-                    <div class="rows-list">
-                        <div class="row-item col-1">
+                <div id="imp-builder_rows-tab" class="tab-pane fade">
+                    <div class="imp-builder_rows-widget-list">
+                        <div class="imp-builder_row-widget row-widget-item row-item col-1">
                             <div class="row-visual">
                                 <span></span>
                             </div>
                             <div class="row-title">1 Column</div>
                         </div>
-                        <div class="row-item col-2">
+                        <div class="imp-builder_row-widget row-widget-item row-item col-2">
                             <div class="row-visual">
                                 <span></span>
                                 <span></span>
                             </div>
                             <div class="row-title">2 Column</div>
                         </div>
-                        <div class="row-item col-3">
+                        <div class="imp-builder_row-widget row-widget-item row-item col-3">
                             <div class="row-visual">
                                 <span></span>
                                 <span></span>
@@ -97,7 +120,7 @@
                             </div>
                             <div class="row-title">3 Column</div>
                         </div>
-                        <div class="row-item col-4">
+                        <div class="imp-builder_row-widget row-widget-item row-item col-4">
                             <div class="row-visual">
                                 <span></span>
                                 <span></span>
@@ -106,7 +129,7 @@
                             </div>
                             <div class="row-title">4 Column</div>
                         </div>
-                        <div class="row-item col-6">
+                        <div class="imp-builder_row-widget row-widget-item row-item col-6">
                             <div class="row-visual">
                                 <span></span>
                                 <span></span>
@@ -119,45 +142,45 @@
                         </div>
                     </div>
                 </div>
-                <div id="templates-tab" class="tab-pane fade">
-                    <div class="section-templates-list clearfix">
-                        <div class="section-template-item">
+                <div id="imp-builder_templates-tab" class="tab-pane fade">
+                    <div class="imp-builder_rows-widget-list section-templates-list clearfix">
+                        <div class="imp-builder_row-widget section-template-item">
                             <div class="img-container">
                                 <img src="./img/templates/cta.jpg" alt="">
                             </div>
                             <div class="template-title">Call To Action</div>
                         </div>
-                        <div class="section-template-item">
+                        <div class="imp-builder_row-widget section-template-item">
                             <div class="img-container">
                                 <img src="./img/templates/gallery.jpg" alt="">
                             </div>
                             <div class="template-title">Gallery</div>
                         </div>
-                        <div class="section-template-item">
+                        <div class="imp-builder_row-widget section-template-item">
                             <div class="img-container">
                                 <img src="./img/templates/google-map.jpg" alt="">
                             </div>
                             <div class="template-title">Google Map</div>
                         </div>
-                        <div class="section-template-item">
+                        <div class="imp-builder_row-widget section-template-item">
                             <div class="img-container">
                                 <img src="./img/templates/service-client.jpg" alt="">
                             </div>
                             <div class="template-title">Service Client</div>
                         </div>
-                        <div class="section-template-item">
+                        <div class="imp-builder_row-widget section-template-item">
                             <div class="img-container">
                                 <img src="./img/templates/cta.jpg" alt="">
                             </div>
                             <div class="template-title">Call To Action</div>
                         </div>
-                        <div class="section-template-item">
+                        <div class="imp-builder_row-widget section-template-item">
                             <div class="img-container">
                                 <img src="./img/templates/gallery.jpg" alt="">
                             </div>
                             <div class="template-title">Gallery</div>
                         </div>
-                        <div class="section-template-item">
+                        <div class="imp-builder_row-widget section-template-item">
                             <div class="img-container">
                                 <img src="./img/templates/google-map.jpg" alt="">
                             </div>
@@ -165,10 +188,12 @@
                         </div>
                     </div>
                 </div>
-                <div id="saved-tab" class="tab-pane fade">
+                <div id="imp-builder_saved-tab" class="tab-pane fade">
                     No saved templates found.
                 </div>
             </div>
+
+
         </div>
     </div>
     <!-- // end builder library panel -->
@@ -199,7 +224,7 @@
                 </div>
             </div> -->
 
-            <div class="imp-builder_row">
+            <div class="imp-builder_row-widget">
                 <div class="customer-service-section bg-gray row-section">
                     <div class="section-title line-through">
                         <div class="inner">
@@ -235,6 +260,8 @@
                 </div>
             </div>
 
+
+            <!-- 
             <div class="imp-builder_row">
                 <div class="call-to-action">
                     <div class="section-title line-through">
@@ -334,12 +361,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
 
         </div>
-
-        <div id="tae"></div>
     </div>
     <!-- // end page-body -->
 

@@ -47,6 +47,9 @@
         visibility: visible;
         opacity: 1;
     }
+    .imp-builder_row-placeholder  {
+        display: none;
+    }
     .imp-builder_panel-arrow {
         position: absolute;
         top: -5px;
@@ -93,17 +96,20 @@
        padding: 15px 15px 20px;
     }
     .elements-list {
-        list-style: none;
-        padding-left: 0;
         margin: 0px auto auto;
-        font-weight: bold;
-        > li {
+        &:after {
+            display: table;
+            clear: both;
+            content: "";
+        }
+        .element-list-item {
             float: left;
             width:50%;
             padding: 10px;
             font-weight: 600;
             margin-bottom: 15px;
             cursor: pointer;
+            background-color: #fff;
             @include transition(.35s);
             &:hover {
                 -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
@@ -117,14 +123,19 @@
             } 
         }
     }
-    .rows-list {
+    .imp-builder_rows-widget-list {
+        &:after {
+            display: table;
+            clear: both;
+            content: "";
+        }
         .row-item {
             float: left;
             width: 50%;
             padding: 10px;
             margin-bottom: 15px;
             cursor: pointer;
-            @include transition(.35s);
+            background-color: #fff;
             &:hover {
                 -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
                 box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
@@ -175,13 +186,18 @@
         }
     }
     .section-templates-list {
+        &:after {
+            display: table;
+            clear: both;
+            content: "";
+        }
         .section-template-item {
             float: left;
             width: 50%;
             padding: 10px;
             margin-bottom: 15px;
             cursor: pointer;
-            @include transition(.35s);
+            background-color: #fff;
             &:hover {
                 -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
                 box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
@@ -268,12 +284,11 @@
 }
 
 .imp-builder_page-content {
-
 }
 
 .imp-builder_stage {
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .imp-builder_empty {
@@ -294,7 +309,7 @@
     }
 }
 
-.imp-builder_row {
+.imp-builder_row-widget{
     position: relative;
 }
 
@@ -508,3 +523,4 @@
         }
     }
 }
+
